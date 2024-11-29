@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Acordando</title>
+    <link rel="stylesheet" href="style.css">
+    <style >
+        /* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(120deg, #a8dadc, #f4f9f9);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #1d3557;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+    background: #457b9d;
+    color: #f1faee;
+}
+
+/* Seção Principal */
+#hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(120deg, #f1faee, #a8dadc);
+    color: #1d3557;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #457b9d;
+    color: #f1faee;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: #1d3557;
+    transform: translateY(-3px);
+}
+
+/* Seções Gerais */
+section {
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1d3557;
+    font-size: 1.8rem;
+}
+
+.services {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.services li {
+    background: #f1faee;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1d3557;
+    color: #f1faee;
+    font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>O Acordando</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Desperte sua essência</h2>
+            <p>Transforme seu dia com reflexões e inspiração. Explore o caminho do bem-estar e autoconhecimento.</p>
+            <a href="#sobre" class="btn">Saiba mais</a>
+        </section>
+
+        <section id="sobre" class="container">
+            <h3>Sobre nós</h3>
+            <p>O Acordando é um espaço dedicado a ajudar você a iniciar seus dias com leveza, propósito e equilíbrio. Junte-se a nós para cultivar a mente e o espírito.</p>
+        </section>
+
+        <section id="servicos" class="container">
+            <h3>O que oferecemos</h3>
+            <ul class="services">
+                <li>🌿 Meditações matinais guiadas</li>
+                <li>📖 Reflexões diárias</li>
+                <li>🌟 Dicas de bem-estar</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="container">
+            <h3>Entre em contato</h3>
+            <p>Para dúvidas ou colaborações, envie-nos uma mensagem.</p>
+            <a href="mailto:contato@oacordando.com" class="btn">Envie um e-mail</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 O Acordando. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
